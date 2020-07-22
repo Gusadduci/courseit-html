@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+  </head>
+
+  <body>
+    <h1>Formularios en HTML</h1>
+
+    <p>Hola mundo... Hoy es: <time datetime="2012-12-08">8 December 2012</time>, nota por <strong>AndreusCafe</strong>.</p>
+
+    <form action="https://tuservidorsito.com/contacto">
+      <label for="nombre">Nombre</label>
+      <input disabled id="nombre" name="nombre" type="text">
+      <br>
+
+      <label for="apellido">Apellido</label>
+      <input readonly id="apellido" name="apellido" type="text">
+      <br>
+      
+      <label for="nombreMascota">Nombre de tu mascota</label>
+      <input id="nombreMascota" name="nombre_mascota" type="text">
+      <br>
+      <br>
+      
+      <label for="usuario">Usuario</label>
+      <input autocomplete="off" id="usuario" name="usuario" type="text">
+      <br>
+      <label for="contraseña">Contraseña</label>
+      <input id="contraseña" name="contraseña" type="password" maxlength="10">
+      <br>
+      <br>
+      <span>Color de tu mascota</span>
+      <br>
+
+      <label>
+        <input name="color_mascota" type="radio" value="Marrón">
+        Marrón
+      </label>
+      <br>
+
+      <label>
+        <input name="color_mascota" type="radio" value="Negro">
+        Negro
+      </label>
+      <br>
+      
+      <label>
+        <input name="color_mascota" type="radio" value="Rojo">
+        Rojo
+      </label>
+      <br>
+      
+      <label>
+        <input name="color_mascota" type="radio" value="Perú">
+        Perú
+      </label>
+
+      <br>
+      <br>
+
+      <span>¿Tu mascota es cuántica?</span>
+      <br>
+      <label>
+        <input disabled name="mascota_cuantica" type="checkbox" value="si">
+        Si
+      </label>
+      <label>
+        <input disabled name="mascota_cuantica" type="checkbox" value="no">
+        No
+      </label>
+      <label>
+        <input disabled name="mascota_cuantica" type="checkbox" value="ambas">
+        Ambas
+      </label>
+
+      <br>
+      <br>
+      
+      <label>
+        Fecha de nacimiento
+        <input name="fecha_nacimiento" type="date">
+      </label>
+      <br>
+      <label>
+        Color de ojos de tu mascota
+        <input name="color_ojos" type="color">
+      </label>
+      <br>
+      <label>
+        Edad de la mascota
+        <input name="edad_mascota" type="number">
+      </label>
+      <br>
+      <label>
+        Rango
+        <input name="rango" type="range" step="10" min="10" max="50">
+      </label>
+
+      <br>
+      <br>
+      <label>
+        <input name="foto_mascota" type="file">
+        Foto de tu mascota
+      </label>
+      <br>
+      <br>
+      <label>
+        Descripción de tu mascota
+        <br>
+        <textarea name="descripcion" cols="30" rows="10"></textarea>
+      </label>
+
+      <br>
+      <br>
+      <label>
+        Nacionalidad de tu mascota
+        <br>
+        <select name="nacionalidad">
+          <option value="SOL">Sol</option>
+          <option value="MER">Mercurio</option>
+        </select>
+      </label>
+
+
+
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <input type="submit" value="Enviar formulario sobre mascotas">
+      
+    </form>
+  </body>
+</html>
